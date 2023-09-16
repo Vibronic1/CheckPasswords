@@ -25,5 +25,5 @@ else:
 for line in f:
     if (re.search('[!@#$%&]',line)!= None and len(line)>8 and re.search('a-z',line)!= None and re.search('A-Z',line)!= None and re.search('0-9',line)!= None):
         print (line)
-    else
+    else:
         print ("pass is too weak")
