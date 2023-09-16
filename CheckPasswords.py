@@ -23,5 +23,5 @@ else:
     sys.exit (1)
 
 for line in f:
-    if (re.search('[!@#$%&]',line)!=None and line.count>8 and re.search('a-z',line)!=None and re.search('A-Z',line)!=None and re.search('0-9',line)!=None):
+    if (re.search('[!@#$%&]',line) and line.count>8 and re.search('a-z',line) and re.search('A-Z',line) and re.search('0-9',line)):
         print (line)
