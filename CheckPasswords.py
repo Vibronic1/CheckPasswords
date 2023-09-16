@@ -26,8 +26,8 @@ for line in f:
     if (re.search('[!@#$%&]',line)!= None and len(line)>8 and re.search('a-z',line)!= None and re.search('A-Z',line)!= None and re.search('0-9',line)!= None):
         print (line)
     else:
-        if re.search('[!@#$%&]',line)!= None : print ("pass" +line +" is too weak by symbol")
-        if len(line)>8 : print ("pass" +line +" is too weak by lenght")
-        if re.search('A-Z',line)!= None : print ("pass" +line +" is too weak by LETTER")
-        if re.search('a-z',line)!= None : print ("pass" +line +" is too weak by letter")
-        if re.search('0-9',line)!= None : print ("pass" +line +" is too weak by number")
+        if re.search('[!@#$%&]',line)== None : print ("pass" +line +" is too weak by symbol")
+        if len(line)>=8 : print ("pass" +line +" is too weak by lenght")
+        if re.search('A-Z',line)== None : print ("pass" +line +" is too weak by LETTER")
+        if re.search('a-z',line)== None : print ("pass" +line +" is too weak by letter")
+        if re.search('0-9',line)== None : print ("pass" +line +" is too weak by number")
